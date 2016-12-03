@@ -1,12 +1,11 @@
 openwebrx:
   restart: always
-  image: "thomx/openwebrx"
-  # build: .
+  build: .
   expose:
     - "8073"
   devices:
     - "/dev/bus/usb"
   ports:
-    - "8080:8073"
+    - "8073:8073"
   volumes:
     - ./config_webrx.py:/opt/openwebrx/config_webrx.py
