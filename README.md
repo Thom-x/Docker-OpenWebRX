@@ -16,7 +16,7 @@ Run :
 ```
 docker run -d -p 8073:8073 \
 --device=/dev/bus/usb:/dev/bus/usb \
--v path/to/your/config_webrx.py:/opt/openwebrx/config_webrx.pyn \
+-v path/to/your/config_webrx.py:/opt/openwebrx/config_webrx.py \
 thomx/openwebrx
 ```
 
