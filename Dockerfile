@@ -51,7 +51,7 @@ WORKDIR /opt/openwebrx
 EXPOSE 8073 8888 4951
 
 # Add Tini
-ENV TINI_VERSION v0.13.0
+ENV TINI_VERSION v0.16.1
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
